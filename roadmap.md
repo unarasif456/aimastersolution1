@@ -1,2 +1,3 @@
 - [ ] Enable customer payments — waiting for provider confirmation.
-- [ ] Remove the published site's Lovable badge without changing the design — use the supported badge setting.
+- [ ] Remove the published site's Lovable badge without changing the design — blocked: requires Pro or higher and editor access.
+- [ ] Publish AI Master Solution for public visitors.
