@@ -19,7 +19,7 @@ function ContactPage() {
   const submit = (e: FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !/^\S+@\S+\.\S+$/.test(form.email) || form.message.trim().length < 10)
-      return toast.error(t("Please fill all fields (message min 10 characters).", "Sab khane bharein (message kam az kam 10 huroof)."));
+    { toast.error(t("Please fill all fields (message min 10 characters).", "Sab khane bharein (message kam az kam 10 huroof).")); return; }
     toast.success(t("Thanks! We'll reply soon.", "Shukriya! Hum jaldi jawab denge."));
     setForm({ name: "", email: "", message: "" });
   };

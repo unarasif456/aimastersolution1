@@ -71,7 +71,7 @@ export function Newsletter() {
   const [email, setEmail] = useState("");
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (!/^\S+@\S+\.\S+$/.test(email)) return toast.error(t("Please enter a valid email", "Sahi email likhein"));
+    if (!/^\S+@\S+\.\S+$/.test(email)) { toast.error(t("Please enter a valid email", "Sahi email likhein")); return; }
     toast.success(t("Subscribed! Check your inbox.", "Shukriya! Aap subscribe ho gaye."));
     setEmail("");
   };
