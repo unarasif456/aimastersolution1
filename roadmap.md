@@ -1,0 +1,2 @@
+- [ ] Enable customer payments — waiting for provider confirmation.
+- [ ] Remove the published site's Lovable badge without changing the design — use the supported badge setting.
