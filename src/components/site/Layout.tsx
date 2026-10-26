@@ -1,7 +1,8 @@
 /** Header (nav, language + theme switch) and Footer (newsletter) shared by all pages */
 import { Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { Menu, Moon, Sparkles, Sun, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import logoAsset from "@/assets/school-logo.png.asset.json";
 import { toast } from "sonner";
 import { useSite } from "@/lib/site";
 
@@ -17,10 +18,12 @@ const nav = [
 
 export function Logo() {
   return (
-    <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-      <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand text-primary-foreground shadow-glow">
-        <Sparkles className="h-4 w-4" />
-      </span>
+    <Link to="/" className="flex items-center gap-2.5 font-display text-lg font-bold">
+      <img
+        src={logoAsset.url}
+        alt="My School — Every child is born a genius"
+        className="h-11 w-11 shrink-0 rounded-lg border border-border bg-white object-contain p-1"
+      />
       <span>AI Master <span className="text-gradient">Solution</span></span>
     </Link>
   );
